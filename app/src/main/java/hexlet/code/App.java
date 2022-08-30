@@ -13,14 +13,22 @@ public class App {
         System.out.print(
                 "1 - Greet\n" +
                         "2 - Even\n" +
+                        "3 - Calc\n" +
                         "0 - Exit\n" +
                         "Your choice: "
         );
+
         int answer = scanner.nextInt();
         switch (answer) {
             case 1:
                 Cli.greeting();
-            case 2: SecondGame.even();
+                break;
+            case 2:
+                SecondGame.even();
+                break;
+            case 3:
+                ThirdGame.calc();
+                break;
             case 0:
                 System.exit(0);
         }
