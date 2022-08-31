@@ -22,7 +22,7 @@ public class SecondGame {
                 round++;
             } else {
                 System.out.println(
-                        "'yes' is wrong answer ;(. Correct answer was 'no'.\n" +
+                        answer + " is wrong answer ;(. Correct answer was 'no'.\n" +
                                 "Let's try again, Bill!");
                 break;
             }

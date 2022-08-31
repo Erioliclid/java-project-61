@@ -15,6 +15,7 @@ public class App {
                         "2 - Even\n" +
                         "3 - Calc\n" +
                         "4 - GCD\n" +
+                        "5 - Progression\n" +
                         "0 - Exit\n" +
                         "Your choice: "
         );
@@ -33,8 +34,13 @@ public class App {
             case 4:
                 ForthGame.gcd();
                 break;
+            case 5:
+                FifthGame.progression();
+                break;
             case 0:
                 System.exit(0);
+            default:
+                System.out.println("Wrong command");
         }
     }
 }
