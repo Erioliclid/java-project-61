@@ -14,6 +14,7 @@ public class App {
                 "1 - Greet\n" +
                         "2 - Even\n" +
                         "3 - Calc\n" +
+                        "4 - GCD\n" +
                         "0 - Exit\n" +
                         "Your choice: "
         );
@@ -28,6 +29,9 @@ public class App {
                 break;
             case 3:
                 ThirdGame.calc();
+                break;
+            case 4:
+                ForthGame.gcd();
                 break;
             case 0:
                 System.exit(0);
