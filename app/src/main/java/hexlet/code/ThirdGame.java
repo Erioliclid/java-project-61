@@ -9,6 +9,8 @@ public class ThirdGame {
         Scanner scanner = new Scanner(System.in);
         String name = Cli.greeting();
 
+        System.out.println("What is the result of the expression?");
+
         int round = 0;
 
         while (round < 3) {
@@ -40,7 +42,7 @@ public class ThirdGame {
                 System.out.println("Correct!");
                 round++;
             } else {
-                System.out.println("'" + answer + "'" + "is wrong answer ;(. Correct answer was" + "'" + realAnswer + "'.\n" +
+                System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + "'" + realAnswer + "'.\n" +
                         "Let's try again, " + name);
                 break;
             }
