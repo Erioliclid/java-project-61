@@ -40,7 +40,7 @@ public class App {
             case 5:
                 Progression.progression();
                 break;
-                case 6:
+            case 6:
                 Prime.prime();
                 break;
             case 0:
