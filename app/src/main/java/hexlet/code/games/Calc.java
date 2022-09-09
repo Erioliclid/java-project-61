@@ -1,9 +1,11 @@
-package hexlet.code;
+package hexlet.code.games;
+
+import hexlet.code.Cli;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class ThirdGame {
+public class Calc {
     public static void calc() {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);

@@ -3,6 +3,8 @@
  */
 package hexlet.code;
 
+import hexlet.code.games.*;
+
 import java.util.Scanner;
 
 public class App {
@@ -27,19 +29,19 @@ public class App {
                 Cli.greeting();
                 break;
             case 2:
-                SecondGame.even();
+                Even.even();
                 break;
             case 3:
-                ThirdGame.calc();
+                Calc.calc();
                 break;
             case 4:
-                ForthGame.gcd();
+                GCD.gcd();
                 break;
             case 5:
-                FifthGame.progression();
+                Progression.progression();
                 break;
                 case 6:
-                SixthGame.prime();
+                Prime.prime();
                 break;
             case 0:
                 System.exit(0);

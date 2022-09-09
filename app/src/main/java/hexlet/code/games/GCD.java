@@ -1,9 +1,11 @@
-package hexlet.code;
+package hexlet.code.games;
+
+import hexlet.code.Cli;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class ForthGame {
+public class GCD {
     public static void gcd() {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
