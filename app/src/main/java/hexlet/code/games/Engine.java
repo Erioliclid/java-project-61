@@ -9,28 +9,6 @@ public class Engine {
     static boolean result = true;
 
     public static void game() {
-//      Проверка на приветствие
-        if (App.answer >= 1 && App.answer <= 6) {
-            App.name = Cli.greeting();
-        }
-//      Проверка на условие игры
-        if (App.answer == 1) {
-            System.exit(0);
-        } else if (App.answer == 2) {
-            System.out.println("Answer 'yes' if number even otherwise answer 'no'.");
-        } else if (App.answer == 3) {
-            System.out.println("What is the result of the expression?");
-        } else if (App.answer == 4) {
-            System.out.println("Find the greatest common divisor of given numbers.");
-        } else if (App.answer == 5) {
-            System.out.println("What number is missing in the progression?");
-        } else if (App.answer == 6) {
-            System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
-        } else {
-            System.out.println("Wrong command");
-            System.exit(0);
-        }
-//      Игра
         for (int i = 0; i < 3; i++) {
             if (result) {
                 switch (App.answer) {
