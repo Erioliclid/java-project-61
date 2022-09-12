@@ -8,12 +8,14 @@ import hexlet.code.games.*;
 import java.util.Scanner;
 
 public class App {
+    public static int answer;
+    public static String name;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the game number and press Enter");
         System.out.print(
-                "1 - Greet\n" +
+                        "1 - Greet\n" +
                         "2 - Even\n" +
                         "3 - Calc\n" +
                         "4 - GCD\n" +
@@ -23,30 +25,8 @@ public class App {
                         "Your choice: "
         );
 
-        int answer = scanner.nextInt();
-        switch (answer) {
-            case 1:
-                Cli.greeting();
-                break;
-            case 2:
-                Even.even();
-                break;
-            case 3:
-                Calc.calc();
-                break;
-            case 4:
-                GCD.gcd();
-                break;
-            case 5:
-                Progression.progression();
-                break;
-            case 6:
-                Prime.prime();
-                break;
-            case 0:
-                System.exit(0);
-            default:
-                System.out.println("Wrong command");
-        }
+        answer = scanner.nextInt();
+        System.out.println();
+        Engine.game();
     }
 }
