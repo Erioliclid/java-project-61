@@ -5,7 +5,7 @@ import java.util.Random;
 public class Prime {
     public static String[] prime() {
         Random random = new Random();
-        int num = random.nextInt(100) + 1;
+        int num = random.nextInt();
 
         String realAnswer = "yes";
         for (int i = 2; i < num; i++) {

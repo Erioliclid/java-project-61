@@ -6,8 +6,8 @@ public class Calc {
     public static String[] calc() {
         Random random = new Random();
 
-        int num1 = random.nextInt(20) + 1;
-        int num2 = random.nextInt(20) + 1;
+        int num1 = random.nextInt();
+        int num2 = random.nextInt();
         char[] symbols = {'+', '-', '*'};
         int symbol = random.nextInt(symbols.length);
 
