@@ -8,25 +8,41 @@ import hexlet.code.games.*;
 import java.util.Scanner;
 
 public class App {
-    public static int answer;
-    public static String name;
+    private static int answer = 0;
+    private static String name = "";
+
+    public static int getAnswer() {
+        return answer;
+    }
+
+    public static String getName() {
+        return name;
+    }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the game number and press Enter");
         System.out.print(
-                        "1 - Greet\n" +
-                        "2 - Even\n" +
-                        "3 - Calc\n" +
-                        "4 - GCD\n" +
-                        "5 - Progression\n" +
-                        "6 - Prime\n" +
-                        "0 - Exit\n" +
-                        "Your choice: "
+                "1 - Greet\n"
+                        + "2 - Even\n"
+                        + "3 - Calc\n"
+                        + "4 - GCD\n"
+                        + "5 - Progression\n"
+                        + "6 - Prime\n"
+                        + "0 - Exit\n"
+                        + "Your choice: "
         );
+
 
         answer = scanner.nextInt();
         System.out.println();
-        Engine.game();
+
+        if (answer >= 1 && answer <= 6) {
+            name = Cli.greeting();
+            Engine.game();
+        } else {
+            System.out.println("Wrong number");
+        }
+
     }
 }

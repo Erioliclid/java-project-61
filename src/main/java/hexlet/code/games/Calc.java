@@ -6,8 +6,8 @@ public class Calc {
     public static String[] calc() {
         Random random = new Random();
 
-        int num1 = random.nextInt(20) + 1;
-        int num2 = random.nextInt(20) + 1;
+        int num1 = random.nextInt() + 1;
+        int num2 = random.nextInt() + 1;
         char[] symbols = {'+', '-', '*'};
         int symbol = random.nextInt(symbols.length);
 
@@ -16,15 +16,11 @@ public class Calc {
 
         int realAnswer = 0;
         switch (symbol) {
-            case 0:
-                realAnswer = num1 + num2;
-                break;
-            case 1:
-                realAnswer = num1 - num2;
-                break;
-            case 2:
-                realAnswer = num1 * num2;
-                break;
+            case 0 -> realAnswer = num1 + num2;
+            case 1 -> realAnswer = num1 - num2;
+            case 2 -> realAnswer = num1 * num2;
+            default -> {
+            }
         }
         String[] gameKey = {quest, Integer.toString(realAnswer)};
         return gameKey;
