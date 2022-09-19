@@ -10,10 +10,10 @@ public class Progression {
 
 //          Создаем массив чисел
         int[] array = new int[random.nextInt()];
-        int step = random.nextInt();
+        int step = random.nextInt(10) + 1;
         for (int i = 0; i < array.length; i++) {
             if (i == 0) {
-                array[i] = random.nextInt();
+                array[i] = random.nextInt(20) + 1;
             } else {
                 array[i] = array[i - 1] + step;
             }
