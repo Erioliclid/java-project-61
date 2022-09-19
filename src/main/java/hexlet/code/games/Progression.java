@@ -9,7 +9,7 @@ public class Progression {
         String quest = "";
 
 //          Создаем массив чисел
-        int[] array = new int[random.nextInt()];
+        int[] array = new int[random.nextInt(10) + 5];
         int step = random.nextInt(10) + 1;
         for (int i = 0; i < array.length; i++) {
             if (i == 0) {
