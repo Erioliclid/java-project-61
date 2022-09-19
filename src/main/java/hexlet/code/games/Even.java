@@ -8,7 +8,7 @@ public class Even {
         int num = random.nextInt();
 
         String realAnswer = "yes";
-        if (num % 2 == 1) {
+        if (num % 2 == 1 || num % 2 == -1) {
             realAnswer = "no";
         }
         String[] gameKey = {Integer.toString(num), realAnswer};
