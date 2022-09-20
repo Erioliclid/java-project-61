@@ -7,13 +7,14 @@ public class Progression {
     public static String[] progression() {
         Random random = new Random();
         String quest = "";
+        int randomPoint = 100;
 
 //          Создаем массив чисел
-        int[] array = new int[random.nextInt(10) + 5];
-        int step = random.nextInt(10) + 1;
+        int[] array = new int[random.nextInt(randomPoint) + 5];
+        int step = random.nextInt(randomPoint) + 1;
         for (int i = 0; i < array.length; i++) {
             if (i == 0) {
-                array[i] = random.nextInt(20) + 1;
+                array[i] = random.nextInt(randomPoint) + 1;
             } else {
                 array[i] = array[i - 1] + step;
             }

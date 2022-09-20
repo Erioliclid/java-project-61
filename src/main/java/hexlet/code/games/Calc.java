@@ -5,9 +5,9 @@ import java.util.Random;
 public class Calc {
     public static String[] calc() {
         Random random = new Random();
-
-        int num1 = random.nextInt();
-        int num2 = random.nextInt();
+        int randomPoint = 20;
+        int num1 = random.nextInt(randomPoint);
+        int num2 = random.nextInt(randomPoint);
         char[] symbols = {'+', '-', '*'};
         int symbol = random.nextInt(symbols.length);
 
